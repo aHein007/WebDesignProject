@@ -147,7 +147,7 @@ a{
 }
 
 .learn-more:hover{
-filter: brightness(2.5);
+filter: brightness(1.5);
 transition: all 0.3s ease-out;
 
 }
@@ -549,6 +549,23 @@ width: 300px;
        
         
         }
+
+        .card-container{
+            margin-top: 50px;
+            max-width: 65%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            
+        }
+        
+        .card-1{
+            margin: auto;
+           width:100%;
+            
+        }
+        
+        
         
 }
 
@@ -594,7 +611,7 @@ width: 300px;
 }
 
 .news-container{
-max-width: 800px;
+max-width: 1000px;
 margin: auto;
 padding: 13px;
 }
@@ -632,6 +649,86 @@ button:hover{
 }
 
 
+/* card-container start */
+.card-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
 
+.card-1{
+    margin:10px auto;
+   width: 300px;
+   background-color:var(--text-color);
+   
+}
+
+.title-1{
+    color: black;
+    font-size: 1.3rem;
+    padding: 10px;
+    font-weight: bolder;
+    opacity: 0.7;
+    text-align: start;
+    margin-left: 35px;
+}
+
+.title-1:hover{
+    color: #F1D204;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-1 p{
+    color: black;
+    padding: 25px 50px;
+    font-size: 15px;
+    text-align: start;
+    opacity: 0.6;
+}
+
+
+
+
+.card-1 img{
+    width: 100%;
+    height: 220px;
+}
+/* card-container end */
+
+.more a ,.more-2 a{
+    color: #F1D204;
+}
+
+.more a:hover{
+    color: #6A4D8A;
+    transition: all 0.3s ease-in-out;
+}
+
+.more-2 a:hover{
+    color: #6A4D8A;
+    transition: all 0.3s ease-in-out;
+}
+
+.more{
+    text-align: start;
+    margin:10px 50px ;
+    margin-bottom:50px ;
+   
+}
+
+
+.more-2{
+    text-align: start;
+    margin:0px 50px ;
+    margin-bottom:50px ;
+    
+}
+
+.more i{
+    font-size: 15px;
+}
 
 /* last-news end */
