@@ -415,6 +415,49 @@ width: 280px;
         padding:0px 10px ;
     }
 
+    .description{
+        height: 500px;
+        width: 100%;
+    }
+   
+    .des-background{
+       background-image: url("./image//mountain3.jpg");
+       width: 100%;
+       height: 100%;
+       opacity: 0.8;
+       object-fit: cover;
+    }
+
+
+   
+    .des-textcontainer{
+       
+        
+       height: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: space-evenly;
+       text-align: center;
+       color: #F1D204;
+       box-shadow: 10px 10px 10px white;
+    }
+   
+    .des-box{
+       width: 100%;
+       font-size: 70px;
+        
+    }
+   
+    .des-box div{
+        width: 100%;
+       font-size: 25px;
+    }
+   
+    .des-box span{
+      display: none;
+    }
+
     
 }
 
@@ -478,6 +521,7 @@ height: 230px;
 /* sesrvie tag stat */
 .service{
 text-align: center;
+width: 100%;
 }
 
 .service-title{
@@ -552,7 +596,7 @@ width: 300px;
 
         .card-container{
             margin-top: 50px;
-            max-width: 65%;
+            max-width: 98%;
             display: flex;
             flex-wrap: wrap;
             margin: auto;
@@ -732,3 +776,52 @@ button:hover{
 }
 
 /* last-news end */
+
+ /* description start Tag  */
+
+ .description{
+    margin-bottom: 50px;
+    width: 100%;
+ }
+
+ .des-background{
+    background-image: url("./image//mountain3.jpg");
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+ }
+
+ .des-textcontainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #F1D204;
+    box-shadow: 10px 10px 10px white;
+    padding: 10px;
+ }
+
+ .des-box{
+    padding: 10px;
+    font-size: 65px;
+    font-weight: bolder;
+ }
+
+ .des-box div{
+    font-size: 20px;
+    margin-bottom: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+
+ .des-box span{
+    padding: 0px 40px;
+    font-weight: normal;
+ }
+
+ 
+
+
+ /* description end tag  */
