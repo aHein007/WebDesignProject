@@ -200,6 +200,7 @@ transition: all 0.3s ease-out;
     text-align: center;
     padding: 10px;
     margin-bottom: 50px;
+    opacity: 0.6;
 
 }
 
@@ -538,7 +539,7 @@ width: 100%;
     margin:10px 0px ;
    text-align: center;
    font-size: 14px;
-   opacity: 0.7;
+   opacity: 0.5;
     
 }
 
@@ -879,6 +880,10 @@ button:hover{
  .member-img img{
     width: 150%;
     height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 11px;
+   
+    
  }
 
  .position{
@@ -889,6 +894,7 @@ button:hover{
 
  .member-info{
    width: 180px;
+   margin-left: 3px;
    
   
  }
@@ -897,7 +903,7 @@ button:hover{
     text-align: start;
     margin: auto;
     font-size: 14px;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
  .social-icon,.social-icon-2,.social-icon-3{
@@ -962,6 +968,13 @@ button:hover{
         height: 100%;
      }
 
+     .card-1{
+        margin:10px auto;
+       width: 100%;
+       background-color:var(--text-color);
+       
+    }
+
 
      .team-container{
         max-width: 250px;
@@ -988,21 +1001,237 @@ button:hover{
         text-align: center;
       }
 
-      .container{
+      .container,.last-news{
         width:100%;
       }
+
+
+      .support p{
+       width: 20%;
+    }
+
+   
  }
 
+
+ /* contact section start */
+.team-title{
+    opacity: 0.7;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 80px;
+    text-align: center;
+}
+ /* contact section end */
+
  
+.contact{
+    width: 100%;
+    text-align: center;
+}
+
+
+.address-container{
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.address label,.support label{
+   width: 50%;
+    color: #F1D204;
+    
+}
+
+.address{
+display: grid;
+gap: 5px;
+grid-template-columns: auto auto;
+width: 100%;
+text-align: start;
+
+}
+
+.address p{
+    margin-left: 50px;
+    opacity: 0.5;
+    font-size: 16px;
+   
+}
+
+.support p{
+    opacity: 0.5;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+.support{
+margin-top: 40px;
+width: 100%;
+display: grid;
+
+grid-template-columns: auto auto;
+width: 100%;
+text-align: start;
+}
+
+
+
+.icon{
+    width: 100%;
+    
+}
+
+.icon i{
+    margin: 0px 10px;
+    font-size: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.icon i:hover{
+    opacity: 1;
+    
+}
+
+
+@media (max-width:800px) {
+
+
+    .address-container{
+        display:block;
+        text-align: center;
+        margin: auto;
+    }
+
+
+   
+
+    .address {
+        margin: auto;
+    }
+
+    .address p{
+        margin-right: 130px;
+    }
+
+    .support p{
+        margin-right: 250px;
+    }
+
+    .icon{
+        margin-top: 80px;
+    }
+}
+
+
+
+@media (max-width:480px) {
+
+    
+
+    .address p,.support p{
+        font-size: 14px;
+    }
+
+
+    .address label,.support label{
+        font-size: 15px;
+    }
 
 
 
 
- 
 
 
- 
+}
+/* team tag end */
+
+/* form tag start */
+.input-container{
+    
+    padding: 20px;
+   
+}
+
+.input-textcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+input[type="text"]{
+    width: 90%;
+    outline: none;
+    margin-bottom: 30px;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+textarea{
+    margin-bottom: 30px;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 5px;
+    width: 98%;
+    outline:none ;
+    background-color: rgb(255, 255, 255);
+}
+
+label{
+    opacity: 0.6;
+   
+}
+
+.search{
+    text-align: end;
+    
+}
+
+.search button{
+    width: 150px;
+    background-color: #F1D204;
+    border: none;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 50px 50px;
+    font-size: 15px;
+    font-weight: bold;
+}
 
 
 
- /* team tag end */
+@media (max-width:600px) {
+    .input-textcontainer{
+        display: block;
+    }
+
+    input[type="text"]{
+        width: 100%;
+    }
+
+
+    textarea{
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* form tag end */
+
+/* footer start */
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 350px;
+    background-color: #292825;
+}
+/* footer end */
