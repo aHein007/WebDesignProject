@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -19,6 +20,13 @@
     font-family: 'Nothing You Could Do', cursive;
 }
 
+.nav-Tag{
+    top: 0;
+    position: sticky;
+    z-index: 20;
+   
+}
+
 .nav-container{
     display: flex;
     justify-content: space-around;
@@ -27,10 +35,27 @@
     position: absolute;
     left: 0;
     right: 0;
-    margin: 10px auto;
+    margin: 0px auto;
     z-index: 10;
+    opacity: 0.7;
+    background-color:black ;
 
 }
+
+.menu a{
+    width: 100px;
+    height: 0px;
+    
+}
+
+.menu a:hover{
+border-bottom: 3px solid #F1D204;
+width: 100px;
+height: 10px;
+transition:width,0.2s ;
+}
+
+
 
 .nav-container div{
     font-size: 40px;
@@ -38,11 +63,13 @@
    color: var(--text-color);
 }
 
-ul li{
+.menu{
     display: inline;
     
 
 }
+
+
 
 .menu a{
     
@@ -85,6 +112,8 @@ a{
   margin-top:350px ;
  
 }
+
+
 
 
 
@@ -180,10 +209,21 @@ transition: all 0.3s ease-out;
     display: grid;
     margin: auto;
     grid-template-columns: auto auto auto;
-   
+    text-align: center;
+ 
 }
 
-
+.x-mark{
+    display: none;
+    position: absolute;
+    top: 0;
+    margin-left: 90px;
+    margin-top: 5px;
+    font-size: 30px;
+    color: crimson;
+    cursor: pointer;
+    
+}
 
 
 .title{
@@ -274,6 +314,9 @@ width: 200px;
 
 .nav-container .menu-item{
     display: none;
+    color: white;
+    cursor: pointer;
+   
 }
 
 
@@ -293,18 +336,23 @@ width: 200px;
     }
 
 
-    ul li{
+    .menu-container .menu{
         display: none;
+        margin-bottom: 20px;
+        transition: all 1s ease-out;
     }
 
     .nav-container .menu-item{
         display: block;
         font-size: 30px;
+        
     }
 
     .menu-container a{
         color: white;
     }
+
+    
     
 
     
@@ -410,9 +458,7 @@ width: 200px;
         color: white;
     }
 
-    .menu-container .menu{
-        display: none;
-    }
+    
 
     .range-group{
         padding:0px 10px ;
@@ -510,11 +556,13 @@ width: 200px;
 .image-container img{
 max-width: 251px;
 height: 230px;
+
 }
 
 .image-container img:hover{
     opacity: 0.4;
     cursor: pointer;
+    transform: scale(1.02);
     transition: all 0.4s ease-out;
 }
 
@@ -742,7 +790,10 @@ button:hover{
 .card-1 img{
     width: 100%;
     height: 220px;
+    
 }
+
+
 /* card-container end */
 
 .more a ,.more-2 a{
@@ -1231,7 +1282,98 @@ label{
 .footer{
     margin-top: 50px;
     width: 100%;
-    height: 350px;
+    height: 100%;
     background-color: #292825;
+    color: white;
+    display: flex;
+    justify-content: space-around;
 }
+
+.end-container{
+display: flex;
+justify-content: space-around;
+margin-right: 250px;
+align-items: center;
+
+}
+
+@media (max-width:830px) {
+    .end-container{
+        display: block;
+        margin:auto;
+        
+    }
+}
+
+
+.product li, .information li,.supporting li{
+    display: block;
+    margin: 20px 0px;
+    
+}
+
+.product li:hover{
+color:#6A4D8A;
+transition: all 0.2s ease-in;
+cursor: pointer;
+}
+
+.information li:hover{
+color:#6A4D8A;
+transition: all 0.2s ease-in;
+cursor: pointer;
+}
+
+
+.supporting li:hover{
+color:#6A4D8A;
+transition: all 0.2s ease-in;
+cursor: pointer;
+}
+
+
+
+
+.fa-chevron-right{
+font-size: 10px;
+opacity: 0.5;
+}
+
+.li-text{
+    font-size: 14px;
+    opacity: 0.6;
+}
+ 
+
+.product ,.information,.supporting{
+    margin: 25px ;
+}
+
+
+
+
+
+
 /* footer end */
+
+/* copyright start */
+.copy-text{
+    background-color: #202020;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+}
+
+.copy{
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.copy span{
+    opacity: 0.6;
+}
+
+
+/* copyright end */
